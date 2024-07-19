@@ -17,4 +17,14 @@
 
 Особенности
  • Данные хранятся в json-файле (library.json)
+ • Если название и/или автор книги состоят из нескольких слов, необходимо использовать ''(см. примеры запросов)
+
+Примеры запросов:
+
+ Добавление: python library.py add -t title -y 2024 -a 'author_name author_surname'
+ Удаление: python library.py delete -i 1
+ Отображение: python library.py display
+ Поиск: python library.py find -t title_to_find 
+ Изменение статуса: python library.py change_status -i 1 -s Выдана
+
  
